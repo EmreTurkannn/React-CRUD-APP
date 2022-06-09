@@ -15,7 +15,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home/>}>
+          <Route path="/React-CRUD-APP" element={<Home/>}>
           </Route>
           <Route path="/about" element={<About/>}>
           </Route>

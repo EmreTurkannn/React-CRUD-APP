@@ -1,5 +1,6 @@
 {
   "name": "crud-app",
+  "homepage": "https://EmreTurkannn.github.io/React-CRUD-APP",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,11 +18,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "json-server": "json-server --watch db.json --port 3001",
     "start:dev": "concurrently \"npm start\" \"npm run json-server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+    
   },
   "eslintConfig": {
     "extends": [
