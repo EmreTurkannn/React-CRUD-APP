@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom'
 import axios from 'axios'
 
 const Home=()=>{
-
     const [users,setUsers]=useState([]);
     
     useEffect(()=>{
@@ -15,6 +14,10 @@ const Home=()=>{
         setUsers(res.data);
     }
   
+    const deleteUser=async (id)=>{
+        await axios.delete(`http://localhost:3001/users/${id}`);
+        loadUser();
+    }   
     
     return(
         <div className='container'>
@@ -37,9 +40,9 @@ const Home=()=>{
            <td>{user.username}</td>
            <td>{user.email}</td>
            <td>
-               <Link className="btn btn-primary m-1" to="/"><i className="fa-solid fa-eye" ></i></Link>
+               <Link className="btn btn-primary m-1"  to={`user/${user.id}`}><i className="fa-solid fa-eye" ></i></Link>
                <Link className="btn btn-outline-primary m-1" to={`user/edit/${user.id}`} ><i className="fa-solid fa-pen"></i></Link>
-               <Link className="btn btn-danger m-1" to="/" ><i className="fa-solid fa-trash-can"></i></Link>
+               <Link className="btn btn-danger m-1" to="/"><i className="fa-solid fa-trash-can" onClick={()=>{deleteUser(user.id)}}></i></Link>
            </td>
        </tr>
    ))}
