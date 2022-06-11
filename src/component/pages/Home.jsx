@@ -37,9 +37,9 @@ const Home=()=>{
            <td>{user.username}</td>
            <td>{user.email}</td>
            <td>
-               <Link className="btn btn-primary m-1" to="/nerde"><i className="fa-solid fa-eye" ></i></Link>
-               <Link className="btn btn-outline-primary m-1" to="/nerde" ><i className="fa-solid fa-pen"></i></Link>
-               <Link className="btn btn-danger m-1" to="/nerde" ><i className="fa-solid fa-trash-can"></i></Link>
+               <Link className="btn btn-primary m-1" to="/"><i className="fa-solid fa-eye" ></i></Link>
+               <Link className="btn btn-outline-primary m-1" to="/" ><i className="fa-solid fa-pen"></i></Link>
+               <Link className="btn btn-danger m-1" to="/" ><i className="fa-solid fa-trash-can"></i></Link>
            </td>
        </tr>
    ))}

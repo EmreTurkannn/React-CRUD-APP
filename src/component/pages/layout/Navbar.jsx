@@ -12,13 +12,13 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <NavLink className="nav-link" aria-current="page" to="/">Anasayfa</NavLink>
+                            <NavLink className="nav-link" aria-hidden="true" to="/">Anasayfa</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link " aria-current="page" to="/about">Hakkında</NavLink>
+                            <NavLink className="nav-link " aria-hidden="true" to="/about" >Hakkında</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link " aria-current="page" to="/contact">İletişim</NavLink>
+                            <NavLink className="nav-link " aria-hidden="true" to="/contact" > İletişim</NavLink>
                         </li>
         
                         
