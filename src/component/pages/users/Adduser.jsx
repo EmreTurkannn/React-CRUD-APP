@@ -1,6 +1,9 @@
 import {React,useState} from 'react'
-
+import {useHistory} from 'react-router-dom';
+import axios from 'axios';
 const Adduser = () => {
+
+    let history=useHistory();
 
     const [user,setUser]=useState({
         name:"",
