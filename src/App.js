@@ -8,6 +8,7 @@ import Contact from './component/pages/Contact'
 import Navbar from './component/pages/layout/Navbar'
 import PageNotFound from './component/pages/PagesNotFound'
 import Adduser from './component/pages/users/Adduser'
+import Edituser from './component/pages/users/Edituser';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
           <Route path="/contact" element={<Contact />}>
           </Route>
           <Route path="/user/add" element={<Adduser />}>
+          </Route>
+          <Route path="/user/edit/:id" element={<Edituser />}>
           </Route>
           <Route path="/*" element={<PageNotFound />}>
           </Route>

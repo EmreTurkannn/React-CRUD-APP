@@ -23,10 +23,10 @@ const Home=()=>{
   <thead>
     <tr className='bg-dark text-white'>
       <th scope="col">#</th>
-      <th scope="col">Name</th>
-      <th scope="col">User Name</th>
-      <th scope="col">Emails</th>
-      <th scope="col">Action</th>
+      <th scope="col">İsim</th>
+      <th scope="col">Kullanıcı Adı</th>
+      <th scope="col">Email</th>
+      <th scope="col">Butonlar</th>
     </tr>
   </thead>
   <tbody>
@@ -38,7 +38,7 @@ const Home=()=>{
            <td>{user.email}</td>
            <td>
                <Link className="btn btn-primary m-1" to="/"><i className="fa-solid fa-eye" ></i></Link>
-               <Link className="btn btn-outline-primary m-1" to="/" ><i className="fa-solid fa-pen"></i></Link>
+               <Link className="btn btn-outline-primary m-1" to={`user/edit/${user.id}`} ><i className="fa-solid fa-pen"></i></Link>
                <Link className="btn btn-danger m-1" to="/" ><i className="fa-solid fa-trash-can"></i></Link>
            </td>
        </tr>

@@ -1,5 +1,5 @@
 {
-"users":[
+  "users": [
     {
       "id": 1,
       "name": "Leanne Graham",
@@ -229,6 +229,22 @@
         "catchPhrase": "Centralized empowering task-force",
         "bs": "target end-to-end models"
       }
+    },
+    {
+      "name": "Emre ",
+      "username": "Turkan",
+      "email": "emre_turkan_98@hotmail.com",
+      "phone": "0543218156",
+      "website": "eraöşsödl",
+      "id": 11
+    },
+    {
+      "name": "fdsf",
+      "username": "fsdf",
+      "email": "emre_turkan_98@hotmail.com",
+      "phone": "056161332",
+      "website": "fss",
+      "id": 12
     }
   ]
 }

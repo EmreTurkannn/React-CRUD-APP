@@ -1,9 +1,9 @@
 import {React,useState} from 'react'
-import {useHistory} from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 const Adduser = () => {
 
-    let history=useHistory();
+    let navigate=useNavigate()
 
     const [user,setUser]=useState({
         name:"",
@@ -22,14 +22,14 @@ const Adduser = () => {
     const onSubmit=async e=>{
         e.preventDefault();
         await axios.post("http://localhost:3001/users",user);
-        history.push("/")
+        navigate('/');
     }
     return (
         <div className='container'>
            <div className='w-75 mx-auto shadow p-5'>
                <h2 className='text-center mb-4'>Kullanıcı Ekle</h2>
                <form onSubmit={e=>onSubmit(e)}>
-                   <div className='form-group'>
+                   <div className='form-group m-2' >
                        <input
                        type="text"
                        className='form-control form-control-lg'
@@ -39,7 +39,7 @@ const Adduser = () => {
                         onChange={e=>onInputChange(e)}
                        />
                    </div>
-                   <div className='form-group'>
+                   <div className='form-group m-2'>
                        <input
                        type="text"
                        className='form-control form-control-lg'
@@ -49,7 +49,7 @@ const Adduser = () => {
                         onChange={e=>onInputChange(e)}
                        />
                    </div>
-                   <div className='form-group'>
+                   <div className='form-group m-2'>
                        <input
                        type="email"
                        className='form-control form-control-lg'
@@ -59,7 +59,7 @@ const Adduser = () => {
                         onChange={e=>onInputChange(e)}
                        />
                        </div>
-                       <div className='form-group'>
+                       <div className='form-group m-2'>
                        <input
                        type="text"
                        className='form-control form-control-lg'
@@ -69,17 +69,17 @@ const Adduser = () => {
                         onChange={e=>onInputChange(e)}
                        />
                        </div>
-                       <div className='form-group'>
+                       <div className='form-group m-2'>
                        <input
                        type="text"
                        className='form-control form-control-lg'
-                       placeholder='Website İsminizi Giriniz'
+                       placeholder='Website Adresinizi Giriniz'
                        name="website"
                        value={website}
                         onChange={e=>onInputChange(e)}
                        />
                    </div>
-                   <button className='btn btn-primary btn-block'>Kullanıcı Ekle</button>
+                   <button className='btn btn-primary w-50 w-100 '>Kullanıcı Ekle</button>
                </form>
            </div>
         </div>
