@@ -15,15 +15,16 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home/>}>
+
+          <Route path="/" element={<Home />}>
           </Route>
-          <Route path="/about" element={<About/>}>
+          <Route path="/about" element={<About />}>
           </Route>
-          <Route path="/contact" element={<Contact/>}>
+          <Route path="/contact" element={<Contact />}>
           </Route>
-          <Route path="/user/add" element={<Adduser/>}>
+          <Route path="/user/add" element={<Adduser />}>
           </Route>
-          <Route path="*" element={<PageNotFound/>}>
+          <Route path="/*" element={<PageNotFound />}>
           </Route>
         </Routes>
       </Router>
