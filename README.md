@@ -15,8 +15,7 @@ Axios ile JSON Server'a veri gönderme,düzenleme ve silme işlemlerinin yapıld
 cd crud-app
 npm run start:dev
 
-#Görseller
-------------------------------------------------------------------------------------------
+
 Anasayfa
 -----------------------------------
 ![foto1](https://user-images.githubusercontent.com/75517943/173338977-8001ab74-d372-48e0-b7b1-a91434c63fb6.PNG)
